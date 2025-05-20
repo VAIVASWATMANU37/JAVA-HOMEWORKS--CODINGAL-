@@ -1,0 +1,5 @@
+var MITCHELLSTARC2 = 56;
+var GLENNMCGRATH2 = 11;
+var BRETTLEE2 = 58;
+var multiply = MITCHELLSTARC2 * GLENNMCGRATH2 * BRETTLEE2;
+console.log(multiply)
