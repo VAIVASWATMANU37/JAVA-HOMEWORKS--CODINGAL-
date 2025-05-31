@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VALIDATION(){
+            var X = document.forms["FORM"]["NAME"].value;
+            var Z = document.forms["FORM"]["EMAIL"].value;
+            var Y = document.forms["FORM"]["NUMBER"].value;
+            if (X == ""){
+                alert("NAME MUST BE FILLED OUT!!!");
+                return false
+            }
+            else if (Y == ""){
+                alert("NUMBER MUST BE FILLED OUT!!!");
+                return false
+            }
+            else if (Z == ""){
+                alert("EMAIL MUST BE FILLED OUT!!!");
+                return false
+            }
+            else alert("ENQUIRED")
+        }
+    </script>
+    <style>
+        body{
+        text-align: center;
+        background-color: yellow;
+        color: blue;
+        vertical-align:middle;
+        }
+    </style>
+</head>
+<body>
+      <h1><b><i><form name="FORM" onsubmit="VALIDATION()">
+        USERNAME-> <input type="text" name="NAME">
+        <br><br>
+     PH. NUMBER → +91 <input id="id1" type="number" min="1000000000" max="9999999999" name="NUMBER"><br><br>
+     EMAIL ID →<input type="email" name="EMAIL"><br><br>
+     <input type="submit" name="SUBMIT"></form></b></i></h1>
+     <a href="http://127.0.0.1:3000/HOMEWORK11{HTML}.htm" target="_blank">GO BACK</a>
+</body>
+</html>
