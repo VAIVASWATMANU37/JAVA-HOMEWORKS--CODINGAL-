@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>RANDOM NO.</h2>
+    <p id="number" style="font-size: 2em;">0</p>
+    <button onclick="toggleGenerator()">Click Me</button>
+    <script>
+      let intervalId = null;
+      let clickCount = 0;
+      function generateRandomNumber() {
+        const randomNum = Math.floor(Math.random() * 100);
+        document.getElementById("number").textContent = randomNum;
+      }
+      function toggleGenerator() {
+        clickCount++;
+        if (clickCount % 2 === 0) {
+          intervalId = setInterval(generateRandomNumber, 500);
+        } else {
+          clearInterval(intervalId);
+        }
+      }
+    </script>
+</body>
+</html>
